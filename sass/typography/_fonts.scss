@@ -1,36 +1,6 @@
-// Gardenia fonts
 
-@include font-face(Robotoslab, fonts/Roboto_Slab/RobotoSlab);
-@include font-face(RobotoBold, fonts/Roboto_Slab/RobotoSlab-Bold);
-@include font-face(RobotoMedium, fonts/Roboto_Slab/RobotoSlab-Medium);
-
-// Dax fonts
-@include font-face(Quicksand, fonts/Quicksand/Quicksand);
-@include font-face(QuicksandBold, fonts/Quicksand/Quicksand-Bold);
-@include font-face(QuicksandMedium, fonts/Quicksand/Quicksand-Medium);
-
-.roboto {
-    font-family: "Robotoslab";
-}
-.roboto-bold {
-    font-family: "RobotoBold";
-}
-.roboto-med {
-    font-family: "RobotoMedium";
-}
-
-
-.quicksand {
-    font-family: "Quicksand";
-}
-.qs-bold {
-    font-family: "QuicksandBold";
-}
-.qs-med {
-    font-family: "QuicksandMedium";
-}
-
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
 
 
 .uppercase {

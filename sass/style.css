@@ -1,59 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Almarai&display=swap");
-@font-face {
-  font-family: "Robotoslab";
-  src: url("fonts/Roboto_Slab/RobotoSlab.eot?") format("eot"), url("fonts/Roboto_Slab/RobotoSlab.woff2") format("woff2"), url("fonts/Roboto_Slab/RobotoSlab.woff") format("woff"), url("fonts/Roboto_Slab/RobotoSlab.ttf") format("truetype"), url("fonts/Roboto_Slab/RobotoSlab.svg#Robotoslab") format("svg");
-}
-
-@font-face {
-  font-family: "RobotoBold";
-  src: url("fonts/Roboto_Slab/RobotoSlab-Bold.eot?") format("eot"), url("fonts/Roboto_Slab/RobotoSlab-Bold.woff2") format("woff2"), url("fonts/Roboto_Slab/RobotoSlab-Bold.woff") format("woff"), url("fonts/Roboto_Slab/RobotoSlab-Bold.ttf") format("truetype"), url("fonts/Roboto_Slab/RobotoSlab-Bold.svg#RobotoBold") format("svg");
-}
-
-@font-face {
-  font-family: "RobotoMedium";
-  src: url("fonts/Roboto_Slab/RobotoSlab-Medium.eot?") format("eot"), url("fonts/Roboto_Slab/RobotoSlab-Medium.woff2") format("woff2"), url("fonts/Roboto_Slab/RobotoSlab-Medium.woff") format("woff"), url("fonts/Roboto_Slab/RobotoSlab-Medium.ttf") format("truetype"), url("fonts/Roboto_Slab/RobotoSlab-Medium.svg#RobotoMedium") format("svg");
-}
-
-@font-face {
-  font-family: "Quicksand";
-  src: url("fonts/Quicksand/Quicksand.eot?") format("eot"), url("fonts/Quicksand/Quicksand.woff2") format("woff2"), url("fonts/Quicksand/Quicksand.woff") format("woff"), url("fonts/Quicksand/Quicksand.ttf") format("truetype"), url("fonts/Quicksand/Quicksand.svg#Quicksand") format("svg");
-}
-
-@font-face {
-  font-family: "QuicksandBold";
-  src: url("fonts/Quicksand/Quicksand-Bold.eot?") format("eot"), url("fonts/Quicksand/Quicksand-Bold.woff2") format("woff2"), url("fonts/Quicksand/Quicksand-Bold.woff") format("woff"), url("fonts/Quicksand/Quicksand-Bold.ttf") format("truetype"), url("fonts/Quicksand/Quicksand-Bold.svg#QuicksandBold") format("svg");
-}
-
-@font-face {
-  font-family: "QuicksandMedium";
-  src: url("fonts/Quicksand/Quicksand-Medium.eot?") format("eot"), url("fonts/Quicksand/Quicksand-Medium.woff2") format("woff2"), url("fonts/Quicksand/Quicksand-Medium.woff") format("woff"), url("fonts/Quicksand/Quicksand-Medium.ttf") format("truetype"), url("fonts/Quicksand/Quicksand-Medium.svg#QuicksandMedium") format("svg");
-}
-
-.roboto {
-  font-family: "Robotoslab";
-}
-
-.roboto-bold {
-  font-family: "RobotoBold";
-}
-
-.roboto-med {
-  font-family: "RobotoMedium";
-}
-
-.quicksand {
-  font-family: "Quicksand";
-}
-
-.qs-bold {
-  font-family: "QuicksandBold";
-}
-
-.qs-med {
-  font-family: "QuicksandMedium";
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -215,11 +161,18 @@
 
 .container {
   padding: 0 15px;
-  width: 100%;
+  width: 1200px;
   margin-right: auto;
   margin-left: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 2rem;
+    width: 100%;
+  }
 }
 
 .d-flex {
@@ -530,6 +483,12 @@
   margin-left: 5rem;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 header .container {
   margin: auto;
   width: 100%;
@@ -609,6 +568,26 @@ header .container .right-side .header-options #arabic {
 header .container .right-side .header-options #column {
   border: #909FBA solid 1px;
   height: 17px;
+}
+
+footer {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 26px;
+  letter-spacing: 0px;
+}
+
+footer .col-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #333333;
+}
+
+footer iframe {
+  width: 100%;
+  height: auto;
 }
 
 main {
@@ -728,6 +707,218 @@ main .rectangle .container .item p {
   padding-top: 1rem;
 }
 
+main .part-2 {
+  width: 100%;
+}
+
+main .part-2 .container .articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+  width: 70%;
+}
+
+main .part-2 .container .articles .col-1 .item {
+  color: #333333;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 14px 40px rgba(57, 53, 80, 0.06);
+          box-shadow: 0px 14px 40px rgba(57, 53, 80, 0.06);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+main .part-2 .container .articles .col-2 .item {
+  color: #333333;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 14px 40px rgba(57, 53, 80, 0.06);
+          box-shadow: 0px 14px 40px rgba(57, 53, 80, 0.06);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+main .part-2 .container .articles .col-2 a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  color: #127533;
+}
+
+main .part-3 {
+  width: 100%;
+}
+
+main .part-3 .container .imgs {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .part-3 .container .imgs .item img {
+  border-radius: 2rem;
+  width: 12rem;
+}
+
+main .part-3 .container .imgs .item .text {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #333333;
+}
+
+main .part-4 {
+  width: 100%;
+}
+
+main .part-4 .container {
+  width: 100%;
+}
+
+main .part-4 .container .title {
+  text-align: left;
+  width: 100%;
+}
+
+main .part-4 .container img {
+  width: 50rem;
+}
+
+main .part-5 {
+  width: 100%;
+}
+
+main .part-5 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+main .part-5 .container .title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  margin-bottom: 5rem;
+}
+
+main .part-5 .container .green-bg {
+  width: 100%;
+  background-color: #0D722E;
+}
+
+main .part-5 .container .green-bg .interior-box {
+  background-color: #FFFFFF;
+  width: 65%;
+  margin: auto;
+  -webkit-box-shadow: 0px 14px 40px rgba(57, 53, 80, 0.06);
+          box-shadow: 0px 14px 40px rgba(57, 53, 80, 0.06);
+  border-radius: 10px;
+  padding: 4rem;
+  margin-top: -4rem;
+  height: 7rem;
+}
+
+main .part-5 .container .green-bg .interior-box .title-number {
+  font-size: 14px;
+  margin: 0;
+}
+
+main .part-5 .container .green-bg .interior-box .title-subject {
+  font-size: 24px;
+  margin: 0;
+  width: 100%;
+}
+
+main .part-5 .container .green-bg .interior-box .title-description {
+  font-size: 14px;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+main .part-5 .container .green-bg .interior-box .read-more {
+  font-size: 14px;
+}
+
+.financial_inclusion_explanation {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5rem;
+}
+
+.title-number {
+  color: #909FBA;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.title-subject {
+  width: 60%;
+  font-size: 38px;
+  color: #333333;
+  margin: 1rem 0;
+}
+
+.title-description {
+  width: 60%;
+  color: #333333;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 2rem 0;
+}
+
 .banner {
   width: 100%;
   height: 80vh;
@@ -736,6 +927,7 @@ main .rectangle .container .item p {
 }
 
 .banner .text {
+  padding: 5rem;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -749,57 +941,10 @@ main .rectangle .container .item p {
           justify-content: center;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.read-more {
+  text-decoration: none;
+  color: #127533;
+  font-size: 14px;
+  line-height: 24px;
 }
 /*# sourceMappingURL=style.css.map */
