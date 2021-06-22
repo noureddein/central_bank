@@ -1010,7 +1010,7 @@ main .container img {
 }
 
 .page_content {
-  font-family: 'Open Sans',sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 5rem;
 }
 
@@ -1114,7 +1114,7 @@ main .container img {
 }
 
 .page_content .pdf_doc a span {
-  color: #048CFC;
+  color: #048cfc;
   font-size: 25px;
 }
 
@@ -1122,5 +1122,10 @@ main .container img {
   display: inline;
   width: 20px;
   margin: 0 0 -4px 0;
+}
+
+.pdf_doc #pdf-1 {
+  margin-top: 0;
+  margin-bottom: 3rem;
 }
 /*# sourceMappingURL=style.css.map */
